@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CookBook</string>
+    <string name="cook_test_name">麻婆豆腐</string>
+    <string name="cook_test_count">生成(0)</string>
+</resources>
