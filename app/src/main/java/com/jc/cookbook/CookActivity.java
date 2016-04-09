@@ -22,8 +22,11 @@ import java.util.Properties;
 
 public class CookActivity extends AppCompatActivity {
 
-    private String cookJson="[{'cookName':'麻婆豆腐'},{'cookName':'千叶豆腐'},{'cookName':'炒土豆片'},{'cookName':'佛手白菜'},{'cookName':'香辣肉丝'}," +
-            "{'cookName':'红烧排骨'},{'cookName':'水煮鱼'},{'cookName':'炒三丝'},{'cookName':'韭菜炒鸡蛋'},{'cookName':'雪落火焰山'}]";
+    private String cookJson="[{'cookName':'软炸里脊'},{'cookName':'酿豆腐'},{'cookName':'豆腐饼'},{'cookName':'佛手白菜'},{'cookName':'茄盒和辣椒盒'}," +
+            "{'cookName':'韭菜炒鸡蛋'},{'cookName':'蒜苔炒鸡蛋'},{'cookName':'土豆炖豆角'},{'cookName':'炒土豆丝'},{'cookName':'炒土豆片'}," +
+            "{'cookName':'茄子炖土豆'},{'cookName':'烧茄子'},{'cookName':'可乐鸡翅'},{'cookName':'小根儿菜炒鸡蛋'},{'cookName':'雪落火焰山'}," +
+            "{'cookName':'西红柿炒鸡蛋'},{'cookName':'拍黄瓜'},{'cookName':'蒜蓉西兰花'},{'cookName':'蒜蓉油麦菜'},{'cookName':'炒蚬子'}," +
+            "{'cookName':'炖排骨'},{'cookName':'鲫鱼汤'},{'cookName':'醋溜白菜'},{'cookName':'西兰花炒肉'},{'cookName':'小白菜肉丸汤'}]";
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -85,7 +88,7 @@ public class CookActivity extends AppCompatActivity {
 
                 // 计算真实值
                 int range = SEEKBAR_MAX_PROGRESS - SEEKBAR_MIN_PROGRESS;
-                int realValue = SEEKBAR_MIN_PROGRESS + progress * range / 100;
+                int realValue = SEEKBAR_MIN_PROGRESS + progress;
 
                 // 确保范围可用
                 if (realValue < SEEKBAR_MIN_PROGRESS) {
